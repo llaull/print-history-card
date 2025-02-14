@@ -1,6 +1,6 @@
 # 🎨 Print History Card
 
-![Print History Card](https://raw.githubusercontent.com/ton-repo/image-preview.png)
+![Print History Card](https://github.com/llaull/print-history-card/blob/main/pannel.png)
 
 Une carte personnalisée pour **Home Assistant** permettant d'afficher l'historique des impressions 3D.  
 Elle affiche les fichiers imprimés, la couleur utilisée, le type de filament et le statut de l'impression.
