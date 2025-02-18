@@ -65,8 +65,7 @@ class PrintHistoryCard extends HTMLElement {
                     <th>Color</th>
                     <th>Type</th>
                     <th>Success</th>
-                    <th>Started At</th>
-                    <th>Finished At</th>
+                    <th>Time</th>
                 </tr>
             </thead>
             <tbody id="print-history-body">
@@ -116,10 +115,9 @@ class PrintHistoryCard extends HTMLElement {
                             : `<ha-icon icon="mdi:close-thick" style="color: #B22222; font-size: 24px;"></ha-icon>`
                     }
                 </td>
-                <td>${this.formatDateFr(entry.created_at)}</td>
                 <td>
-                    ${entry.finished_at !== null
-                        ? this.formatDateFr(entry.finished_at)
+                    ${entry.print_duration !== null
+                        ? entry.print_duration
                         : `<ha-icon icon="mdi:clock-outline" style="color: orange; font-size: 24px;"></ha-icon>`
                     }
                 </td>
